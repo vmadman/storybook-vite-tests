@@ -8,7 +8,8 @@
     "build-storybook": "build-storybook",
     "storybook": "start-storybook -p 6006",
     "chromatic": "npx chromatic --project-token=daf4ca11e60f",
-    "nginx-storybook": "docker run --name storybook-nginx --rm -p 8080:80 -v /home/luke/Projects/storybook-vite-tests/storybook-static:/usr/share/nginx/html:ro -d nginx"
+    "nginx-storybook": "docker run --name storybook-nginx --rm -p 8080:80 -v /home/luke/Projects/storybook-vite-tests/storybook-static:/usr/share/nginx/html:ro -d nginx",
+    "serve-storybook": "http-server ./storybook-static -p 8080"
   },
   "dependencies": {
     "lit": "^2.0.0-rc.2"
@@ -23,6 +24,7 @@
     "@storybook/web-components": "^6.4.19",
     "babel-loader": "^8.2.3",
     "chromatic": "^6.5.1",
+    "http-server": "^14.1.0",
     "lit-html": "^2.2.0",
     "storybook-builder-vite": "^0.1.17",
     "typescript": "^4.5.5",
