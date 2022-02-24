@@ -14,7 +14,7 @@ export class SomeComponent extends LitElement {
   render() {
     return html`
       <div class="some-component">
-        Hello <slot></slot>
+        Hello <slot></slot>!
       </div>
     `;
   }

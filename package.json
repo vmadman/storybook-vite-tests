@@ -6,7 +6,8 @@
   "scripts": {
     "build-manifest": "cem analyze --dev --config='cem.config.mjs'",
     "build-storybook": "build-storybook",
-    "storybook": "start-storybook -p 6006"
+    "storybook": "start-storybook -p 6006",
+    "chromatic": "npx chromatic --project-token=daf4ca11e60f"
   },
   "dependencies": {
     "lit": "^2.0.0-rc.2"
