@@ -6,3 +6,5 @@ node_modules
 dist/
 .history
 *.log
+storybook-static/
+build-storybook.log

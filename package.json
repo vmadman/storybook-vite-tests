@@ -7,7 +7,8 @@
     "build-manifest": "cem analyze --dev --config='cem.config.mjs'",
     "build-storybook": "build-storybook",
     "storybook": "start-storybook -p 6006",
-    "chromatic": "npx chromatic --project-token=daf4ca11e60f"
+    "chromatic": "npx chromatic --project-token=daf4ca11e60f",
+    "nginx-storybook": "docker run --name storybook-nginx --rm -p 8080:80 -v /home/luke/Projects/storybook-vite-tests/storybook-static:/usr/share/nginx/html:ro -d nginx"
   },
   "dependencies": {
     "lit": "^2.0.0-rc.2"
