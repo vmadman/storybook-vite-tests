@@ -1,0 +1,29 @@
+{
+  "name": "storybook-vite-tests",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build-manifest": "cem analyze --dev --config='cem.config.mjs'",
+    "build-storybook": "build-storybook",
+    "storybook": "start-storybook -p 6006"
+  },
+  "dependencies": {
+    "lit": "^2.0.0-rc.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@custom-elements-manifest/analyzer": "^0.5.7",
+    "@storybook/addon-actions": "^6.4.19",
+    "@storybook/addon-docs": "6.4.19",
+    "@storybook/addon-essentials": "^6.4.19",
+    "@storybook/addon-links": "^6.4.19",
+    "@storybook/web-components": "^6.4.19",
+    "babel-loader": "^8.2.3",
+    "lit-html": "^2.2.0",
+    "storybook-builder-vite": "^0.1.17",
+    "typescript": "^4.5.5",
+    "vite": "^2.8.3"
+  },
+  "customElements": "custom-elements.json"
+}

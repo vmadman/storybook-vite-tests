@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "src/some-component.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "SomeComponent",
+          "members": [],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "some-component",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "SomeComponent",
+          "declaration": {
+            "name": "SomeComponent",
+            "module": "src/some-component.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "some-component",
+          "declaration": {
+            "name": "SomeComponent",
+            "module": "src/some-component.ts"
+          }
+        }
+      ]
+    }
+  ]
+}
